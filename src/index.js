@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.use(express.json());
 const ingestDatarouter = require("./routes/ingestDataRoutes");
 const registerCustomerRouter = require("./routes/registerRoutes");
